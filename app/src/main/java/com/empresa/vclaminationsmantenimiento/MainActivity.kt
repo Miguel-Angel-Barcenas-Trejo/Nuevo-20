@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.appBarMain.fab.setOnClickListener { view ->
-            startActivity(Intent(this, reporte2::class.java))
-            Snackbar.make(view, "Abriendo ReporteActivity", Snackbar.LENGTH_LONG)
+            startActivity(Intent(this, ChatActivity::class.java))
+            Snackbar.make(view, "Abriendo chat", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
                 .setAnchorView(R.id.fab).show()
         }
